@@ -1,0 +1,41 @@
+html {
+  background-color: #1e1e1e;
+  color: rgb(200, 200, 200);
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+#parrafo {
+  border: 5px solid rgb(0, 50, 50);
+  color: rgb(0, 50, 50);
+  background-color: rgb(144, 255, 255);
+  font-weight: bold;
+}
+
+#titulo-ids {
+  color: rgb(10, 90, 90);
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
+.text-30 {
+  font-size: 40px;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.color-green {
+  color: green;
+}
+
+.color-cyan {
+  color: cyan;
+}

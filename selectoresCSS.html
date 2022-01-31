@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/selectoresCSS.css">
+  <title>Selectores</title>
+</head>
+
+<body>
+  <a href="index.html">Inicio</a>
+  <h1>Tipos de selectores en CSS</h1>
+  <hr>
+  <div>
+    <h2>Selectores con etiquetas</h2>
+    <p>Los selectores con etiqueta se invocan poniendo el nombre de la etiqueta de HTML en la hoja de estilos CSS.
+      Ejemplo el titulo principal (etiqueta h1) y el documento html (etiqueta html) estan editados con las respectivas
+      etiquetas, y en codigo CSS quedaria de esta forma:
+    </p>
+    <div>
+      <code>
+      html{ <br>
+        background-color: #1e1e1e; <br>
+        color: rgb(200, 200, 200); <br>
+        font-family: sans-serif; <br>
+        scroll-behavior: smooth; <br>
+      } <br>
+      <br>
+      h1 { <br>
+      text-transform: uppercase; <br>
+      } <br>
+      </code>
+    </div>
+  </div>
+  <hr>
+  <div>
+    <h2 id="titulo-ids">Selectores con identificadores (IDs)</h2>
+    <p id="parrafo">
+      Los selectores de identificadores o Ids permiten aplicar estilos mediante el atributo <b>"id"</b> de las etiquetas
+      HTML y son invocadas en CSS con #la-id. Ejemplo el titulo y este parrafo esta editado con la ayuda de una ID para
+      cada uno.
+    </p>
+  </div>
+  <hr>
+  <div>
+    <h2>Selectores con clases</h2>
+    <p>
+      Los selectores con clases permiten aplicar estilos mediante clases, para poder hacer esto tenemos que definir una
+      clase en la o las etiquetas HTML que queremos modificar, desde CSS se invocan con .la-clase. Ejemplo los
+      siguientes parrafos estan editados mediante clases.
+    </p>
+    <p class="text-20 bg-black color-green">
+      Parrafo de ejemplo de clases 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste aut odit quas,
+      placeat vitae nemo fuga optio illo. Alias, illum odit similique asperiores inventore eveniet dicta laudantium
+      fugit tempora sit!
+    </p>
+    <p class="text-30 bg-black color-cyan">
+      Parrafo de ejemplo de clases 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste aut odit quas,
+      placeat vitae nemo fuga optio illo. Alias, illum odit similique asperiores inventore eveniet dicta laudantium
+      fugit tempora sit!
+    </p>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+html {
+  background-color: #1e1e1e;
+  color: rgb(230, 230, 230);
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  color: rgb(127, 0, 200);
+  background-color: #000;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0%;
+}
+
+li {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: #008282;
+  background-color: #000;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px;
+  display: block;
+}
