@@ -11,16 +11,18 @@
 
 <body>
   <a href="index.html">Inicio</a>
-  <h1>Tipos de selectores en CSS</h1>
+  <h1>Selectores en CSS</h1>
   <hr>
-  <div>
-    <h2>Selectores con etiquetas</h2>
-    <p>Los selectores con etiqueta se invocan poniendo el nombre de la etiqueta de HTML en la hoja de estilos CSS.
-      Ejemplo el titulo principal (etiqueta h1) y el documento html (etiqueta html) estan editados con las respectivas
-      etiquetas, y en codigo CSS quedaria de esta forma:
-    </p>
+  <article id="selectores-basicos">
     <div>
-      <code>
+      <h2>Selectores basicos</h2>
+      <h3>Selectores con etiquetas</h3>
+      <p>Los selectores con etiqueta se invocan poniendo el nombre de la etiqueta de HTML en la hoja de estilos CSS.
+        Ejemplo el titulo principal (etiqueta h1) y el documento html (etiqueta html) estan editados con las respectivas
+        etiquetas, y en codigo CSS quedaria de esta forma:
+      </p>
+      <div>
+        <code>
       html{ <br>
         background-color: #1e1e1e; <br>
         color: rgb(200, 200, 200); <br>
@@ -32,36 +34,140 @@
       text-transform: uppercase; <br>
       } <br>
       </code>
+      </div>
     </div>
-  </div>
+    <div>
+      <h3>Selectores con identificadores (IDs)</h3>
+      <p id="parrafo">
+        Los selectores de identificadores o Ids permiten aplicar estilos mediante el atributo <b>"id"</b> de las
+        etiquetas
+        HTML y son invocadas en CSS con #la-id. Ejemplo este parrafo esta editado con la ayuda de una ID.
+      </p>
+    </div>
+    <div>
+      <h3>Selectores con clases</h3>
+      <p>
+        Los selectores con clases permiten aplicar estilos mediante clases, para poder hacer esto tenemos que definir
+        una
+        clase en la o las etiquetas HTML que queremos modificar, desde CSS se invocan con .la-clase. Ejemplo los
+        siguientes parrafos estan editados mediante clases.
+      </p>
+      <p class="text-20 bg-black color-green">
+        Parrafo de ejemplo de clases 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste aut odit quas,
+        placeat vitae nemo fuga optio illo. Alias, illum odit similique asperiores inventore eveniet dicta laudantium
+        fugit tempora sit!
+      </p>
+      <p class="text-uppercase bg-black color-cyan">
+        Parrafo de ejemplo de clases 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste aut odit quas,
+        placeat vitae nemo fuga optio illo. Alias, illum odit similique asperiores inventore eveniet dicta laudantium
+        fugit tempora sit!
+      </p>
+    </div>
+  </article>
   <hr>
-  <div>
-    <h2 id="titulo-ids">Selectores con identificadores (IDs)</h2>
-    <p id="parrafo">
-      Los selectores de identificadores o Ids permiten aplicar estilos mediante el atributo <b>"id"</b> de las etiquetas
-      HTML y son invocadas en CSS con #la-id. Ejemplo el titulo y este parrafo esta editado con la ayuda de una ID para
-      cada uno.
-    </p>
-  </div>
-  <hr>
-  <div>
-    <h2>Selectores con clases</h2>
+  <article id="selectores-avanzados">
+    <h2>Selectores avanzados</h2>
+    <h2>Selectores de hijos</h2>
+    <h3>Selectores de hijos directos</h3>
     <p>
-      Los selectores con clases permiten aplicar estilos mediante clases, para poder hacer esto tenemos que definir una
-      clase en la o las etiquetas HTML que queremos modificar, desde CSS se invocan con .la-clase. Ejemplo los
-      siguientes parrafos estan editados mediante clases.
+      Para dar estilos a hijos directos de una etiqueta, clase o id, vasta con poner en CSS el identificador
+      (dependiendo del
+      tipo puede ser la etiqueta la id o la clase) seguido de “>” seguido de la etiqueta a la cual queremos editar.
+      Nota: solo
+      aplicara estilos a los hijos del primer nivel. Veamos un ejemplo con esta lista:
     </p>
-    <p class="text-20 bg-black color-green">
-      Parrafo de ejemplo de clases 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste aut odit quas,
-      placeat vitae nemo fuga optio illo. Alias, illum odit similique asperiores inventore eveniet dicta laudantium
-      fugit tempora sit!
+    <ul class="hijos-directos">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <h3>Selectores de hijos descendientes</h3>
+    <p>Para dar estilos a hijos descendientes de una etiqueta, clase o id, vasta con poner en CSS el identificador
+      (dependiendo
+      del tipo puede ser la etiqueta la id o la clase) seguido de “espacio” seguido de la etiqueta a la cual queremos
+      editar.
+      Nota: Aplica a cualquier descendiente. Veamos un ejemplo con esta lista:</p>
+    <ul class="hijos-descendientes">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <h2>Selectores de hermanos</h2>
+    <h3>Selector de hermanos en general</h3>
+    <p>Para dar estilos a hermanos (mimo nivel) en cascada de una etiqueta, clase o id, vasta con poner en CSS el
+      identificador
+      (dependiendo
+      del tipo puede ser la etiqueta la id o la clase) seguido de “~” seguido de la etiqueta a la cual queremos
+      editar.
+      Nota: Aplica solo a hermanos descendiente. Veamos un ejemplo con esta lista:</p>
+    <ul>
+      <li><b>Primavera</b></li>
+      <li class="hermanos-general"><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <h3>Selector de hermanos adyacentes</h3>
+    <p>Para dar estilos a hermanos adyacentes (mismo nivel, hermano directo) en cascada de una etiqueta, clase o id,
+      vasta con
+      poner en CSS el identificador (dependiendo del tipo puede ser la etiqueta la id o la clase) seguido de “+” seguido
+      de la
+      etiqueta a la cual queremos editar. Nota: Aplica solo a hermanos adyacentes. Veamos un ejemplo con esta lista:</p>
+    <ul>
+      <li><b>Primavera</b></li>
+      <li class="hermanos-adyacentes"><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+    <h3>Selectores de atributos</h3>
+    <p>Para dar estilos mediante atributos de una etiqueta, vasta con poner en CSS:
+      <br>
+      [nombre-del-atributo] para aplicar sobre un atributo ej [href]
+      <br>
+      [nombre-del-atributo=”tipo”] para aplicar sobre el atributo y tipo ej [target="_blank"]
+      <br>
+      [nombre-del-atributo*=”P”] para aplicar si la palabra P esta contenida en el atributo ej [href*=".co"]
+      <br>
+      [nombre-del-atributo^=”P”] para aplicar si el atributo empieza por la palabra P ej [href^="https"]
+      <br>
+      [nombre-del-atributo$=”P”] para aplicar si el atributo termina con la palabra P ej [href$=".tv"]
+      <br>
+      [nombre-del-atributo~=”P”] para aplicar si el atributo contiene la palabra P en una lista separada por espacios ej
+      [class~="trabajo"]
+      <br>
+      [nombre-del-atributo|=”P”] para aplicar si el atributo contiene la palabra P en una lista separada por espacios y
+      que
+      despues del texto venga un "-" ej [class|="red"]
+      <br>
+      Se recomienda combinarlo con otros selectores. Veamos un ejemplo con esta lista:
     </p>
-    <p class="text-30 bg-black color-cyan">
-      Parrafo de ejemplo de clases 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste aut odit quas,
-      placeat vitae nemo fuga optio illo. Alias, illum odit similique asperiores inventore eveniet dicta laudantium
-      fugit tempora sit!
+    <nav class="selectores-atributos">
+      <ul>
+        <li><a href="https://www.facebook.com" target="_blank" class="trabajo personal">Facebook</a></li>
+        <li><a href="https://twitter.com" target="_blank" class="red-social personal">Twitter</a></li>
+        <li><a href="https://www.instagram.com" target="_blank" class="red-social ">Instagram</a></li>
+        <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+        <li><a href="https://www.twitch.tv" target="_blank">Twitch</a></li>
+        <li><a href="index.html">Inicio</a></li>
+      </ul>
+    </nav>
+    <h3>Selector universal</h3>
+    <p>
+      El selector universal permite aplicar estilos a todas las etiquetas del documento, en CSS se nota con “*” pero no
+      se
+      recomienda usarla para dar estilos globalmente, en ocasiones puede usarse localmente ej (.selector-universal *
+      {...}). Ej veamos la lista:
     </p>
-  </div>
+    <ul class="selector-universal">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+  </article>
+  <hr>
 </body>
 
 </html>

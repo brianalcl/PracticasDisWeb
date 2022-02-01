@@ -9,6 +9,11 @@ h1 {
   text-transform: uppercase;
 }
 
+h3 {
+  background-color: rgb(132, 0, 255);
+  color: black;
+}
+
 #parrafo {
   border: 5px solid rgb(0, 50, 50);
   color: rgb(0, 50, 50);
@@ -16,16 +21,12 @@ h1 {
   font-weight: bold;
 }
 
-#titulo-ids {
-  color: rgb(10, 90, 90);
-}
-
 .text-20 {
   font-size: 20px;
 }
 
-.text-30 {
-  font-size: 40px;
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .bg-black {
@@ -38,4 +39,54 @@ h1 {
 
 .color-cyan {
   color: cyan;
+}
+
+.hijos-directos > li {
+  background-color: salmon;
+}
+
+.hijos-descendientes b {
+  background-color: salmon;
+}
+
+.hermanos-general ~ li {
+  background-color: salmon;
+}
+
+.hermanos-adyacentes + li {
+  background-color: salmon;
+}
+
+.selectores-atributos a[href] {
+  color: orangered;
+}
+
+.selectores-atributos a[target="_blank"] {
+  font-weight: bold;
+  text-decoration: none;
+  background-color: sandybrown;
+}
+
+.selectores-atributos a[href*=".co"] {
+  font-size: 20px;
+}
+
+.selectores-atributos a[href^="https"] {
+  text-transform: uppercase;
+}
+
+.selectores-atributos a[href$=".tv"] {
+  background-color: darkcyan;
+}
+
+.selectores-atributos a[class~="trabajo"] {
+  background-color: black;
+}
+
+.selectores-atributos a[class|="red"] {
+  background-color: tomato;
+}
+
+.selector-universal * {
+  color: salmon;
 }
