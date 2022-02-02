@@ -90,3 +90,52 @@ h3 {
 .selector-universal * {
   color: salmon;
 }
+
+.form-pseudoclases *:required {
+  border-color: blue;
+}
+
+.form-pseudoclases *:valid {
+  border-color: green;
+}
+
+.form-pseudoclases *:invalid {
+  border-color: red;
+}
+
+.form-pseudoclases *:focus {
+  background-color: skyblue;
+}
+
+.menu-pseudoclases a:visited {
+  color: olive;
+}
+
+.menu-pseudoclases a:hover {
+  color: orangered;
+}
+
+.lista-pseudoclases li:first-child {
+  color: orangered;
+}
+
+.lista-pseudoclases li:last-child {
+  color: blueviolet;
+}
+
+.lista-pseudoclases li:nth-child(3) {
+  color: lightcoral;
+}
+
+.lista-pseudoclases li:nth-child(4n) {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.lista-pseudoclases li:nth-child(even) {
+  background-color: rgb(56, 15, 15);
+}
+
+.lista-pseudoclases li:nth-child(odd) {
+  background-color: rgb(116, 65, 47);
+}

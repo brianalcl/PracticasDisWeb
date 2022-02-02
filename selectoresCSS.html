@@ -96,7 +96,7 @@
     </ul>
     <h2>Selectores de hermanos</h2>
     <h3>Selector de hermanos en general</h3>
-    <p>Para dar estilos a hermanos (mimo nivel) en cascada de una etiqueta, clase o id, vasta con poner en CSS el
+    <p>Para dar estilos a hermanos (mismo nivel) en cascada de una etiqueta, clase o id, vasta con poner en CSS el
       identificador
       (dependiendo
       del tipo puede ser la etiqueta la id o la clase) seguido de “~” seguido de la etiqueta a la cual queremos
@@ -166,6 +166,56 @@
       <li><b>Otoño</b></li>
       <li><b>Invierno</b></li>
     </ul>
+  </article>
+  <hr>
+  <article id="pseudoclases">
+    <h2>Pseudoclases</h2>
+    <h3>Pseudoclases de elementos iteractivos</h3>
+    <p>Las pseudoclases dan estilo dependiendo del contexto, posicion o estado del elemento. Existen muchas
+      pseudoclases, se recomienda ver <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes"
+        target="_blank">pseudoclases de mozilla.org</a>. <br>
+      Veamos un ejemplo con un formulario:</p>
+    <form class="form-pseudoclases">
+      <input type="text" name="nombre" placeholder="Escribe tu nombre" required>
+      <input type="email" name="correo" placeholder="Escribe tu correo" required>
+      <input type="submit">
+    </form>
+    <p>Ahora veamos otro ejemplo con un menu de redes:</p>
+    <nav class="menu-pseudoclases">
+      <a href="https://www.google.com">Google</a>
+      <a href="https://www.facebook.com">Facebook</a>
+      <a href="https://www.youtube.com">Youtube</a>
+      <a href="https://www.instagram.com">Instagram</a>
+    </nav>
+    <h3>Pseudoclases de posicion</h3>
+    <p>
+      Las pseudoclases de posicion trabajan con las posiciones que tienen los elementos en su contenedor veamos un
+      ejemplo con una lista:
+    </p>
+    <ol class="lista-pseudoclases">
+      <li>Enero</li>
+      <li>Febrero</li>
+      <li>Marzo</li>
+      <li>Abril</li>
+      <li>Mayo</li>
+      <li>Junio</li>
+      <li>Julio</li>
+      <li>Agosto</li>
+      <li>Septiembre</li>
+      <li>Octubre</li>
+      <li>Noviembre</li>
+      <li>diciembre</li>
+    </ol>
+  </article>
+  <hr>
+  <article id="psudoelementos">
+    <h2>Pseudoelementos</h2>
+    <p>Al igual que las pseudo-classes, los pseudo-elementos se añaden a los selectores, pero en cambio, no describen un
+      estado
+      especial sino que, permiten añadir estilos a una parte concreta del documento. Por ejemplo, el pseudoelemento
+      ::first-line selecciona solo la primera línea del elemento especificado por el selector. Para ver ejemplos ir a
+      <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements" target="_blank">este enlace</a>
+    </p>
   </article>
   <hr>
 </body>
