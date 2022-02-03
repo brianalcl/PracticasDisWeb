@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="box-model.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <a href="../index.html">Inicio</a>
+  <h1>Modelo de caja</h1>
+  <main>
+    <p>
+      El box-model es la forma en que CSS ve a los elementos HTML. <br>
+      Las propiedades mas comunes del modelado de caja son: <br>
+      1 content (contenido) <br>
+      2 border (borde) <br>
+      3 padding (relleno) <br>
+      4 margin (margen) <br>
+      <br>
+      Una caja tiene 4 lados y se ven como las manecillas del reloj: <br>
+      1 top (arriba) <br>
+      2 right (derecha) <br>
+      3 bottom (abajo) <br>
+      4 left (izquierda) <br>
+    </p>
+  </main>
+  <hr>
+  <article id="dimensiones">
+    <h3>Dimensiones</h3>
+    <p>
+      Las dimensiones usadas son ancho (width) y alto (height) veamos ejemplos:
+    </p>
+    <div class="caja-size-200 bg-red">
+      width 200px; <br>
+      height 200px; <br>
+    </div>
+    <div class="caja-size-150 bg-green">
+      width 150px; <br>
+      height 150px; <br>
+    </div>
+    <div class="caja-size-100 bg-blue">
+      width 100px; <br>
+      height 100px; <br>
+    </div>
+  </article>
+  <hr>
+  <article id="bordes">
+    <h3>Bordes</h3>
+    <p>Los bordes tienen 3 propiedades y son: <br>
+      border-color <br>
+      border-width <br>
+      border-style<br>
+      Las 3 propiedades se pueden simplificar a 1 usando el shorthand:
+      <br>
+      border: "width" "style" "color" <br>
+      Ejemplo: <br>
+      border-width: 2px; <br>
+      border-style: solid; <br>
+      border-color: red <br>
+      se simplifica a: <br>
+      border: 2px solid red; <br>
+      Ejemplos:
+    </p>
+    <div class="caja-border-1 caja-size-150 bg-pink">border: 5px solid black</div>
+    <div class="caja-border-2 caja-size-150 bg-pink">border: 5px dashed black</div>
+    <div class="caja-border-3 caja-size-150 bg-pink">border: 5px double black </div>
+  </article>
+  <hr>
+  <article id="padding">
+    <h3>Padding</h3>
+    <p>
+      El padding es la distancia interna (del borde al contenido) <br>
+      El nombre de la propiedad es padding y se puede aplicar a: <br>
+      - los 4 lados con: padding: valor; <br>
+      - arriba-abajo, izquierda-derecha con padding: valor1 valor2; <br>
+      - arriba, izquierda-derecha, abajo con padding: valor1 valor2 valor3; <br>
+      - en cualquier direccion (sentido horario) con padding: valor1 valor2 valor3 valor4; <br>
+      veamos unos ejemplos:
+    </p>
+    <div class="caja-padding-1 bg-pink caja-size-150">padding 10px <br> M M M M M M M M M M M M M M M M M M M M M M M M
+      M M
+      M M M M M M M
+      M
+      M M M M M M M M M M M M M M</div>
+    <div class="caja-padding-2 bg-pink caja-size-150">padding 0px <br> M M M M M M M M M M M M M M M M M M M M M M M M
+      M M M M M M M M M
+      M
+      M M M M M M M M M M M M M M</div>
+    <div class="caja-padding-3 bg-pink caja-size-150">padding 20px <br> M M M M M M M M M M M M M M M M M M M M M M M M
+      M M M M M M M M M
+      M
+      M M M M M M M M M M M M M M</div>
+  </article>
+  <hr>
+  <article id="margin">
+    <h3>Margin</h3>
+    <p>
+      El margin es la distancia externa (del elemento html a otros elementos hermanos o padres) <br>
+      El nombre de la propiedad es margin y se puede aplicar a: <br>
+      - los 4 lados con: margin: valor; <br>
+      - arriba-abajo, izquierda-derecha con margin: valor1 valor2; <br>
+      - arriba, izquierda-derecha, abajo con margin: valor1 valor2 valor3; <br>
+      - en cualquier direccion (sentido horario) con margin: valor1 valor2 valor3 valor4; <br>
+      veamos unos ejemplos:
+    </p>
+    <div class="caja-margin-1 bg-pink caja-size-150">margin 10px <br> M M M M M M M M M M M M M M M M M M M M M M M M
+      M M
+      M M M M M M M
+      M
+      M M M M M M M M M M M M M M</div>
+    <div class="caja-margin-2 bg-pink caja-size-150">margin 0px <br> M M M M M M M M M M M M M M M M M M M M M M M M
+      M M M M M M M M M
+      M
+      M M M M M M M M M M M M M M</div>
+    <div class="caja-margin-3 bg-pink caja-size-150">margin 20px <br> M M M M M M M M M M M M M M M M M M M M M M M M
+      M M M M M M M M M
+      M
+      M M M M M M M M M M M M M M</div>
+  </article>
+  <hr>
+  <article id="display">
+    <h3>Display</h3>
+    <p>
+      Propiedad display (base) <br>
+      las propiedades base son: <br>
+      display: inline; (se comporta en linea) <br>
+      display: block; (se comporta en bloque) <br>
+      display: inline-block; (se comporta en linea con propiedades de bloque, entre otras tener dimensiones) <br>
+      Ejemplo: todas las cajas div de esta pagina estan trabajando con display: inline-block;
+    </p>
+  </article>
+  <hr>
+</body>
+
+</html>

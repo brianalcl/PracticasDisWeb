@@ -1,0 +1,77 @@
+html {
+  background-color: rgb(30, 30, 30);
+  color: rgb(200, 200, 200);
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+div {
+  display: inline-block;
+}
+
+.bg-red {
+  background-color: rgb(100, 0, 0);
+}
+
+.bg-green {
+  background-color: rgb(0, 100, 0);
+}
+
+.bg-blue {
+  background-color: rgb(0, 0, 100);
+}
+
+.bg-pink {
+  background: palevioletred;
+}
+
+.caja-size-200 {
+  width: 200px;
+  height: 200px;
+}
+
+.caja-size-150 {
+  width: 150px;
+  height: 150px;
+}
+
+.caja-size-100 {
+  width: 100px;
+  height: 100px;
+}
+
+.caja-border-1 {
+  border: 5px solid black;
+}
+
+.caja-border-2 {
+  border: 5px dashed black;
+}
+
+.caja-border-3 {
+  border: 5px double black;
+}
+
+.caja-padding-1 {
+  padding: 10px;
+}
+
+.caja-padding-2 {
+  padding: 0px;
+}
+
+.caja-padding-3 {
+  padding: 20px;
+}
+
+.caja-margin-1 {
+  margin: 10px;
+}
+
+.caja-margin-2 {
+  margin: 0px;
+}
+
+.caja-margin-3 {
+  margin: 20px;
+}
