@@ -1,0 +1,91 @@
+html {
+  background-color: rgb(30, 30, 30);
+  color: rgb(200, 200, 200);
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: rgb(138, 43, 226);
+  font-weight: bold;
+}
+
+.bg-black {
+  background-color: rgb(60, 0, 109);
+}
+
+.bg-pink {
+  background-color: pink;
+}
+
+.bg-coral {
+  background-color: coral;
+}
+
+.bg-olive {
+  background-color: olive;
+}
+
+.border-05 {
+  border: 10px dashed rgba(0, 0, 0, 0.5);
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  padding: 20px 0px;
+}
+
+.menu ul li a {
+  padding: 20px;
+  text-decoration: none;
+  background-color: rgba(200, 200, 200, 0.2);
+  color: rgb(200, 200, 200);
+  font-size: 32px;
+}
+
+.main {
+  padding: 20px;
+  width: 500px;
+  display: inline-block;
+}
+
+.menu ul li a:hover {
+  background-color: rgb(0, 0, 0, 0);
+}
+
+.main p {
+  display: inline-block;
+}
+
+.main p:nth-of-type(1) {
+  background-color: rgb(136, 0, 0);
+}
+
+.main p:nth-of-type(2) {
+  background-color: rgb(0, 95, 0);
+}
+
+.main p:nth-of-type(3) {
+  background-color: rgb(49, 0, 95);
+}
+
+.article {
+  padding: 20px;
+  width: 500px;
+  display: inline-block;
+}
+
+.article section {
+  background-color: brown;
+  border: 5px dashed tomato;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+}
