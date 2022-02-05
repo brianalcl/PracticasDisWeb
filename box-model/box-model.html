@@ -134,6 +134,49 @@
     </p>
   </article>
   <hr>
+  <article id="overflow">
+    <h3>Overflow</h3>
+    <p>
+      La propiedad overflow permite controlar que el texto no se desborde de una caja contenedora. Se puede aplicar en
+      el eje x e y por separado con overflow-x u overflow-y o juntos con overflow veamos un par de
+      ejemplos de overflow:
+    </p>
+    <p class="overflow-visible">
+      Este parrafo aplica overflow visible, el texto desborda la caja contedora.
+    </p>
+    <p class="overflow-hiden">
+      Este parrafo aplica overflow hiden, el texto desaparece de la caja contenedora.
+    </p>
+    <p class="overflow-scroll">
+      Este parrafo aplica overflow scroll, aparece una barra lateral y una horizontal para poder hacer scroll.
+    </p>
+    <p class="overflow-auto">
+      Este parrafo aplica overflow auto, automaticamente detecta si tiene que colocar una barra de scroll o no.
+    </p>
+  </article>
+  <hr>
+  <article id="box-sizing">
+    <h2>box-sizing</h2>
+    <p>
+      El box sizing es la propiedad que define como se mide el tamaño de la caja, hay dos tipos de box-sixing: <br>
+      1) content-box: la caja tiene el tamaño definido y todos los bordes y padding se aplican por fuera de la caja.
+      <br>
+      2) border-box: la caja tiene un tamaño definido y todos los bordes y pading se aplican dentro de la caja. <br>
+      Ejemplos:
+    </p>
+    <p class="box-sizing-content-box">
+      Esta caja tiene un tamaño de 300x300px un box-sizing: content-box; un padding de 40px y un borde de 10px lo que me
+      da un tamaño total de:
+      400x400px.
+    </p>
+    <p class="box-sizing-border-box">
+      Esta caja tiene un tamaño de 300x300px un box-sizing: border-box; un padding de 40px y un borde de 10px pero el
+      tamaño no cambia, sigue siendo 300x300px.
+    </p>
+    <p>Es altamente recomendable resetear el <a href="https://www.paulirish.com/2012/box-sizing-border-box-ftw/"
+        target="_blank">box-sizing a border-box</a></p>
+  </article>
+  <hr>
 </body>
 
 </html>

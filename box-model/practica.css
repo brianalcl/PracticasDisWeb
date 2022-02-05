@@ -1,4 +1,13 @@
 html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
   background-color: rgb(30, 30, 30);
   color: rgb(200, 200, 200);
   scroll-behavior: smooth;
@@ -50,7 +59,8 @@ h1 {
 
 .main {
   padding: 20px;
-  width: 500px;
+  width: 400px;
+  height: 400px;
   display: inline-block;
 }
 
@@ -76,8 +86,10 @@ h1 {
 
 .article {
   padding: 20px;
-  width: 500px;
+  width: 400px;
+  height: 400px;
   display: inline-block;
+  overflow-y: scroll;
 }
 
 .article section {
