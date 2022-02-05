@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="posicionamiento.css">
+  <title>Posicionamiento</title>
+</head>
+
+<body>
+  <a href="../index.html">Inicio</a>
+
+  <article id="position">
+    <h1>Positions</h1>
+    <p>
+      Da posiciones a los elementos html. <br>
+      tenemos 4 propiedades y para cada una se habilita las propiedades top y bottom, left y right. <a
+        href="https://cssreference.io/property/position/" target="_blank">VER EJEMPLOS</a><br>
+    </p>
+  </article>
+  <hr>
+  <article id="position-static">
+    <h3>Posicionamiento static</h3>
+    <p>Es el valor por defecto</p>
+  </article>
+  <hr>
+  <article id="position-relative">
+    <h3>Posicionamiento relative</h3>
+    <p>El elemento conserva sus dimensiones y posicion original en el flujo del documento. Si se mueve toma como
+      referencia su posicion original.</p>
+  </article>
+  <hr>
+  <article id="position-absolute">
+    <h3>Posicionamiento absolute</h3>
+    <p>El elemento pierde sus dimensiones y posicion original en el flujo del documento. Si se mueve toma como
+      referencia 2 elementos: <br>
+      1) el primer ancestro con posicionamiento relativo. <br>
+      2) si no encuentra un ancestro relativo, se mueve respecto del documento HTML.
+    </p>
+  </article>
+  <hr>
+  <article id="position-fixed">
+    <h3>Posicionamiento fixed</h3>
+    <p>El elemento pierde sus dimensiones y posicion original en el flujo del documento. Si se mueve toma como
+      referencia el documento HTML y queda fijo en la posicion, cuando el scroll se mueva, el elemento no lo hara, queda
+      FIJO.
+    </p>
+  </article>
+  <hr>
+  <article id="position-sticky">
+    <h3>Posicionamiento sticky</h3>
+    <p>Es una combinacion de posicionamiento relative y fixed, para este posicionamiento las propiedades de top, left,
+      bottom, y right, no mueven el elemento, sirven como un punto de referencia. Mientras no lleguen a ese valor, el
+      elemento se comporta como relative, cuando llega se convierte en fixed. <br>
+      Para que este comportamiento funcione el elemento sticky debe ser hijo directo del body o su elemento contenedor
+      debe tener dimensiones definidas y solo sera sticky dentro de las dimensiones de su contenedor padre.
+    </p>
+  </article>
+  <hr>
+
+</body>
+
+</html>
