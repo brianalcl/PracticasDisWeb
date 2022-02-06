@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  background-color: rgb(30, 30, 30);
+  color: rgb(200, 200, 200);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.bg-30 {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.menu-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-ul li {
+  display: inline-block;
+}
+
+.menu-ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(200, 200, 200);
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.title-article {
+  position: sticky;
+  text-align: center;
+  font-size: 32px;
+  top: 56px;
+  margin: 0;
+  padding: 10px;
+}
+
+.section-gatos article img {
+  width: 100%;
+}
+
+.fuentes a {
+  color: rgb(200, 200, 200);
+  display: block;
+}
+
+.footer {
+  text-align: center;
+}
