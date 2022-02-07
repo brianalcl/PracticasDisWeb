@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="medidas.css">
+  <title>Medidas CSS</title>
+</head>
+
+<body>
+  <a href="../index.html">Inicio</a>
+  <h1>Unidades de medida en CSS</h1>
+  <article id="introduccion">
+    <p>
+      En CSS tenemos dos clases de unidades de medida:
+    </p>
+    <h3>Absolutas</h3>
+    <p>
+      Su valor no cambia, son unidades del mundo real ejemplos:<br>
+      pc, cm, mm, in, Q <br>
+      pt (1/72in) <br>
+      px (1/96in) <br>
+    </p>
+    <h3>Relativas</h3>
+    <p>
+      Su valor es relativo a un contexto ejemplos: <br>
+      em, rem, ex, ch - al tamaño de la fuente <br>
+      em - basada en la anchura de la "m" de la fuente del elemento <br>
+      rem - basada en la anchura de la "m" de la fuente del elemento raíz (html) <br>
+      ex - basada en la altura de la "x" de la fuente del elemento <br>
+      ch - basada en la anchura del "0" de la fuente del elemento <br>
+      % - al tamaño del contenedor <br>
+      vw, vh, vmin, vmax - al tamaño del viewport <br>
+      vw - ancho del viewport van de 1 a 100 <br>
+      vh - alto del viewport van de 1 a 100 <br>
+      vmax - entre vw y vh toma el que tenga mayor valor <br>
+      vmin - entre vw y vh toma el que tenga menor valor <br>
+      Conversiones entre unidades - https://pxtoem.com/ <br>
+    </p>
+  </article>
+  <hr>
+  <article id="unidades-ejemplos">
+    <h3>Ejemplos de unidades</h3>
+    <h4>- Unidades estaticas:</h4>
+    <h4>Pixel (px)</h4>
+    <div class="div-px bg-darkcyan"> Caja de 160x160px </div>
+    <h4>- Unidades relativas:</h4>
+    <h4>Em</h4>
+    <div class="div-em bg-darkcyan"> Caja de 10x10em. El em se basa en la anchura de la "M" de la fuente del elemento,
+      el
+      tamaño por defecto
+      es 1em=16px</div>
+    <h4>Rem</h4>
+    <div class="div-rem bg-darkcyan"> Caja de 10x10rem. Es igual al em, solo que toma como base el tamaño de la "M"
+      fuente
+      de la raiz (html)</div>
+    <h4>Porcentaje</h4>
+    <div class="div-percentage bg-darkcyan"> Caja de width 25% y height de 160px </div>
+    <h4>- Unidades relativa al viewport</h4>
+    <div class="div-v bg-darkcyan">Caja de 50vw x 50vh</div>
+  </article>
+</body>
+
+</html>

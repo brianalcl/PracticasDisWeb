@@ -1,0 +1,46 @@
+html {
+  background-color: rgb(30, 30, 30);
+  color: rgb(200, 200, 200);
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 8px;
+}
+
+.bg-darkcyan {
+  background-color: darkcyan;
+}
+
+.div-px {
+  width: 160px;
+  height: 160px;
+}
+
+.div-em {
+  width: 10em;
+  height: 10em;
+}
+
+.div-rem {
+  width: 10rem;
+  height: 10rem;
+}
+
+.div-percentage {
+  width: 25%;
+  height: 160px;
+}
+
+.div-v {
+  height: 50vh;
+  width: 50vw;
+}
