@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="variables-funciones.css">
+  <title>Variables y funciones</title>
+</head>
+
+
+<body>
+  <a href="../index.html">Inicio</a>
+  <h1>Variables y funciones</h1>
+  <article id="custom-properties">
+    <h3>Custom properties</h3>
+    <p>Las custom properties o variables en css permiten guardar un valor para usarlo luego.</p>
+    <p>Su declaracion consta de dos guiones seguido del nombre seguido de la definicion. Para usarla se pasa la variable
+      por parametro a la funcion var() Ejemplo en la siguiente etiqueta "code": <br>
+    </p>
+    <code class="code-props">
+      <pre>
+.code-props pre{ 
+  --primary-color: rgb(10, 10, 10); 
+  --font-size: 32px; 
+  background-color: var(--primary-color); 
+}      
+      </pre>    
+    </code>
+    <p>
+      El alcance de las properties esta ligada al bloque en cual se define, si se quiere que sea de alcance global,
+      entonces las properties se tienen que definir en la raiz (:root). Veamos un ejemplo.
+    </p>
+    <p class="p-props">
+      Este parrafo tiene el color de fondo definido a partir de una property definida en :root, el codigo es mas o menos
+      asi:
+
+      <code>
+            <pre>
+root:{
+  --bg-magenta: rgb(175, 0, 166); 
+}
+
+.p-props{
+  background-color: var(--bg-magenta);
+}
+            </pre>
+          </code>
+    </p>
+
+  </article>
+  <article id="funciones">
+    <h3>var()</h3>
+    <p>
+      Permine usar las variables.
+    </p>
+    <h3>url()</h3>
+    <p>
+      Permite meter contenido mediante una ruta.
+    </p>
+    <h3>calc()</h3>
+    <p>
+      Permite hacer calculos aritmeticos. Ejemplo con la ayuda de properties y calc() podemos obtener un padding
+      automatico para:
+    </p>
+    <div class="div-ch-10">
+      0123456789
+    </div>
+    <h3>min() y max()</h3>
+    <p>
+      Permite definir el maximo o el minimo entre dos o mas parametros separados por ",".
+    </p>
+    <h3>clamp()</h3>
+    <p>
+      Recibe 3 valores, (valor minimo, valor que fluye, valor maximo) luego permite trabajar entre esos valores.
+      Ejemplo la siguiente caja define el font-size con clamp:
+    </p>
+    <div class="div-clamp">
+      Hola.
+    </div>
+  </article>
+</body>
+
+</html>
