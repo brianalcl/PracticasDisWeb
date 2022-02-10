@@ -1,0 +1,38 @@
+html {
+  background-color: rgb(30, 30, 30);
+  color: rgb(200, 200, 200);
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  border: 5px solid rgb(105, 0, 100);
+  width: 400px;
+}
+
+.card-2,
+.card-3 {
+  border: 5px solid rgb(105, 0, 100);
+  width: 400px;
+  height: 400px;
+}
+
+.card-2 img {
+  object-fit: cover;
+}
+
+.card-3 img {
+  object-fit: contain;
+}

@@ -1,0 +1,73 @@
+:root {
+  --success-color: rgb(13, 136, 40);
+  --error-color: rgb(146, 20, 20);
+  --lightblue: rgb(173, 216, 230);
+  --dark: rgb(30, 30, 30);
+  --white: rgb(200, 200, 200);
+  --blue: rgb(0, 105, 155);
+}
+
+html {
+  background-color: var(--dark);
+  color: var(--white);
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.form-1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding: 2rem;
+  background-color: var(--lightblue);
+  border-radius: 1rem;
+}
+
+.form-1 > * {
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.35rem;
+  color: var(--dark);
+}
+
+.form-1 > *::placeholder {
+  color: var(--blue);
+}
+
+.form-1 > *[required]:invalid {
+  border: 3px solid var(--error-color);
+}
+
+.form-1 > *[required]:valid {
+  border: 3px solid var(--success-color);
+}
+
+.form-1 input[type="submit"] {
+  margin-bottom: 0;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.form-1 input[type="submit"]:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.form-1 textarea {
+  resize: none;
+}
