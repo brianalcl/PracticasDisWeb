@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="flexbox.css">
+  <title>Flexbox CSS</title>
+</head>
+
+<body>
+  <a href="../index.html">Inicio</a>
+  <h1>Flexbox</h1>
+  <article id="flex-vs-inline-flex">
+    <h3>Flex vs inline-flex</h3>
+    <section class="flex bg-coral">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+    <section class="inline-flex bg-coral">
+      <article class="item">inline-flex item 1</article>
+      <article class="item">inline-flex item 2</article>
+      <article class="item">inline-flex item 3</article>
+    </section>
+  </article>
+  <hr>
+  <article id="Direcciones">
+    <h2>flex-direction</h2>
+    <p>Son las 4 direcciones posibles que pueden tomar los elementos de un contenedor con display flex.</p>
+    <h3>row</h3>
+    <p>Los elementos se muestran en fila de izquierda a derecha</p>
+    <section class="flex-direction-row bg-coral">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+    <h3>row-reverse</h3>
+    <p>Los elementos se muestran en fila de derecha a izquierda</p>
+    <section class="flex-direction-row-reverse bg-coral">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+    <h3>row</h3>
+    <p>Los elementos se muestran en columna del primero al ultimo</p>
+    <section class="flex-direction-column bg-coral">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+    <h3>column-reverse</h3>
+    <p>Los elementos se muestran en columna del ultimo al primero</p>
+    <section class="flex-direction-column-reverse bg-coral">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+    </section>
+  </article>
+  <hr>
+  <article id="flex-wrap">
+    <h4>flex-wrap</h4>
+    <p>Permite bajar elementos en caso que ya no entren en el viewport.</p>
+    <h3>nowrap</h3>
+    <p>Sistema por defecto, los elementos no bajan</p>
+    <section class="flex-wrap-nowrap flex-direction-row bg-coral">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+      <article class="item">flex item 6</article>
+    </section>
+    <h3>wrap</h3>
+    <p>Permite que los elementos bajen, respetando el orden de izquierda a derecha, cuando no entren en el viewport</p>
+    <section class="flex-wrap-wrap flex-direction-row bg-coral">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+      <article class="item">flex item 6</article>
+      <article class="item">flex item 7</article>
+      <article class="item">flex item 8</article>
+      <article class="item">flex item 9</article>
+      <article class="item">flex item 10</article>
+      <article class="item">flex item 11</article>
+      <article class="item">flex item 12</article>
+    </section>
+  </article>
+</body>
+
+</html>
