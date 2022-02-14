@@ -12,17 +12,110 @@ html {
   box-sizing: inherit;
 }
 
-.bg-coral {
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  background-color: blueviolet;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+#flex-vs-inline-flex h2 {
+  background-color: brown;
+}
+
+#flex-vs-inline-flex section {
   background-color: coral;
+}
+
+#flex-vs-inline-flex section article {
+  background-image: radial-gradient(coral, brown);
+}
+
+#flex-wrap h2 {
+  background-color: darkmagenta;
+}
+
+#flex-wrap section {
+  background-color: pink;
+}
+
+#flex-wrap section article {
+  background-image: radial-gradient(pink, darkmagenta);
+}
+
+#flex-direction h2 {
+  background-color: darkblue;
+}
+
+#flex-direction section {
+  background-color: darkcyan;
+}
+
+#flex-direction section article {
+  background-image: radial-gradient(darkcyan, darkblue);
+}
+
+#align-content-align-items h2 {
+  background-color: darkgreen;
+}
+
+#align-content-align-items section {
+  background-color: lightgreen;
+}
+
+#align-content-align-items section article {
+  background-image: radial-gradient(lightgreen, darkgreen);
+}
+
+#justify-content h2 {
+  background-color: indigo;
+}
+
+#justify-content section {
+  background-color: skyblue;
+}
+
+#justify-content section article {
+  background-image: radial-gradient(skyblue, indigo);
 }
 
 .item {
   font-size: 1.5rem;
   text-align: center;
-  background-image: radial-gradient(coral, brown);
   width: 10rem;
   height: 10rem;
   padding: 1rem;
+}
+
+.item-1 {
+  height: 8rem;
+  padding-top: 2rem;
+}
+
+.item-2 {
+  height: 12rem;
+  padding-top: 7rem;
+}
+
+.item-3 {
+  height: 6rem;
+  padding-top: 0rem;
+}
+
+.item-4 {
+  height: auto;
 }
 
 .flex {
@@ -59,4 +152,48 @@ html {
 
 .flex-wrap-wrap {
   flex-wrap: wrap;
+}
+
+.jc-flex-start {
+  justify-content: flex-start;
+}
+
+.jc-flex-end {
+  justify-content: flex-end;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-space-between {
+  justify-content: space-between;
+}
+
+.jc-space-around {
+  justify-content: space-around;
+}
+
+.jc-space-evenly {
+  justify-content: space-evenly;
+}
+
+.al-it-flex-start {
+  align-items: flex-start;
+}
+
+.al-it-flex-end {
+  align-items: flex-end;
+}
+
+.al-it-center {
+  align-items: center;
+}
+
+.al-it-stretch {
+  align-items: stretch;
+}
+
+.al-it-baseline {
+  align-items: baseline;
 }

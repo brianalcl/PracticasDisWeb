@@ -13,46 +13,50 @@
   <a href="../index.html">Inicio</a>
   <h1>Flexbox</h1>
   <article id="flex-vs-inline-flex">
-    <h3>Flex vs inline-flex</h3>
-    <section class="flex bg-coral">
+    <h2>display flex vs inline-flex</h2>
+    <h3>display flex</h3>
+    <p>El contenedor trabaja como un bloque.</p>
+    <section class="flex">
       <article class="item">flex item 1</article>
       <article class="item">flex item 2</article>
       <article class="item">flex item 3</article>
     </section>
-    <section class="inline-flex bg-coral">
+    <h3>display inline-flex</h3>
+    <p>El contenedor trabaja en linea.</p>
+    <section class="inline-flex">
       <article class="item">inline-flex item 1</article>
       <article class="item">inline-flex item 2</article>
       <article class="item">inline-flex item 3</article>
     </section>
   </article>
   <hr>
-  <article id="Direcciones">
+  <article id="flex-direction">
     <h2>flex-direction</h2>
     <p>Son las 4 direcciones posibles que pueden tomar los elementos de un contenedor con display flex.</p>
     <h3>row</h3>
     <p>Los elementos se muestran en fila de izquierda a derecha</p>
-    <section class="flex-direction-row bg-coral">
+    <section class="flex-direction-row">
       <article class="item">flex item 1</article>
       <article class="item">flex item 2</article>
       <article class="item">flex item 3</article>
     </section>
     <h3>row-reverse</h3>
     <p>Los elementos se muestran en fila de derecha a izquierda</p>
-    <section class="flex-direction-row-reverse bg-coral">
+    <section class="flex-direction-row-reverse">
       <article class="item">flex item 1</article>
       <article class="item">flex item 2</article>
       <article class="item">flex item 3</article>
     </section>
-    <h3>row</h3>
+    <h3>column</h3>
     <p>Los elementos se muestran en columna del primero al ultimo</p>
-    <section class="flex-direction-column bg-coral">
+    <section class="flex-direction-column">
       <article class="item">flex item 1</article>
       <article class="item">flex item 2</article>
       <article class="item">flex item 3</article>
     </section>
     <h3>column-reverse</h3>
     <p>Los elementos se muestran en columna del ultimo al primero</p>
-    <section class="flex-direction-column-reverse bg-coral">
+    <section class="flex-direction-column-reverse">
       <article class="item">flex item 1</article>
       <article class="item">flex item 2</article>
       <article class="item">flex item 3</article>
@@ -60,11 +64,11 @@
   </article>
   <hr>
   <article id="flex-wrap">
-    <h4>flex-wrap</h4>
+    <h2>flex-wrap</h2>
     <p>Permite bajar elementos en caso que ya no entren en el viewport.</p>
     <h3>nowrap</h3>
     <p>Sistema por defecto, los elementos no bajan</p>
-    <section class="flex-wrap-nowrap flex-direction-row bg-coral">
+    <section class="flex-wrap-nowrap flex-direction-row">
       <article class="item">flex item 1</article>
       <article class="item">flex item 2</article>
       <article class="item">flex item 3</article>
@@ -74,7 +78,7 @@
     </section>
     <h3>wrap</h3>
     <p>Permite que los elementos bajen, respetando el orden de izquierda a derecha, cuando no entren en el viewport</p>
-    <section class="flex-wrap-wrap flex-direction-row bg-coral">
+    <section class="flex-wrap-wrap flex-direction-row">
       <article class="item">flex item 1</article>
       <article class="item">flex item 2</article>
       <article class="item">flex item 3</article>
@@ -89,6 +93,114 @@
       <article class="item">flex item 12</article>
     </section>
   </article>
+  <hr>
+  <article id="justify-content">
+    <h2>justify-content</h2>
+    <p>Es la forma en que se adapta el contenido en la caja contenedora.</p>
+    <h3>flex-start</h3>
+    <p>Es el valor por defecto, lo elementos se alinean a la izquierda.</p>
+    <section class="jc-flex-start flex-wrap-wrap flex-direction-row ">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+    </section>
+    <h3>flex-end</h3>
+    <p>Los elementos se alinean a la derecha.</p>
+    <section class="jc-flex-end flex-wrap-wrap flex-direction-row">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+    </section>
+    <h3>center</h3>
+    <p>Los elementos se centran.</p>
+    <section class="jc-center flex-wrap-wrap flex-direction-row">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+    </section>
+    <h3>space-between</h3>
+    <p>Los elementos ignoran espacios laterales.</p>
+    <section class="jc-space-between flex-wrap-wrap flex-direction-row">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+    </section>
+    <h3>space-around</h3>
+    <p>Los elementos se separan de forma equivalente, y separando la mitad en los laterales.</p>
+    <section class="jc-space-around flex-wrap-wrap flex-direction-row">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+    </section>
+    <h3>space-evenly</h3>
+    <p>Los elementos se separan de forma equivalente, incluyendo la misma separacion en los laterales.</p>
+    <section class="jc-space-evenly flex-wrap-wrap flex-direction-row">
+      <article class="item">flex item 1</article>
+      <article class="item">flex item 2</article>
+      <article class="item">flex item 3</article>
+      <article class="item">flex item 4</article>
+      <article class="item">flex item 5</article>
+    </section>
+  </article>
+  <hr>
+  <article id="align-content-align-items">
+    <h2>align-items</h2>
+    <h3>stretch</h3>
+    <p>Propiedad por defecto Los elementos, se estiran, ocupando el contenedor, siempre que no tengan una altura y/o
+      anchura
+      definida. En este caso solo
+      se
+      estira "flex item 4"</p>
+    <section class="al-it-stretch flex-wrap-nowrap flex-direction-row">
+      <article class="item item-1">flex item 1</article>
+      <article class="item item-2">flex item 2</article>
+      <article class="item item-3">flex item 3</article>
+      <article class="item item-4">flex item 4 height auto</article>
+    </section>
+    <h3>flex-start</h3>
+    <p>Los elementos se alinean a la parte superior del contenedor.</p>
+    <section class="al-it-flex-start flex-wrap-nowrap flex-direction-row">
+      <article class="item item-1">flex item 1</article>
+      <article class="item item-2">flex item 2</article>
+      <article class="item item-3">flex item 3</article>
+      <article class="item item-4">flex item 4 height auto</article>
+    </section>
+    <h3>flex-end</h3>
+    <p>Los elementos se alinean a la parte inferior del contenedor.</p>
+    <section class="al-it-flex-end flex-wrap-nowrap flex-direction-row">
+      <article class="item item-1">flex item 1</article>
+      <article class="item item-2">flex item 2</article>
+      <article class="item item-3">flex item 3</article>
+      <article class="item item-4">flex item 4 height auto</article>
+    </section>
+    <h3>center</h3>
+    <p>Los elementos se alinean al centro del contenedor.</p>
+    <section class="al-it-center flex-wrap-nowrap flex-direction-row">
+      <article class="item item-1">flex item 1</article>
+      <article class="item item-2">flex item 2</article>
+      <article class="item item-3">flex item 3</article>
+      <article class="item item-4">flex item 4 height auto</article>
+    </section>
+    <h3>baseline</h3>
+    <p>Los elementos se alinean con el texto.</p>
+    <section class="al-it-baseline flex-wrap-nowrap flex-direction-row">
+      <article class="item item-1">flex item 1</article>
+      <article class="item item-2">flex item 2</article>
+      <article class="item item-3">flex item 3</article>
+      <article class="item item-4">flex item 4 height auto</article>
+    </section>
+  </article>
+  <hr>
 </body>
 
 </html>
