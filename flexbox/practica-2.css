@@ -1,0 +1,100 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: rgb(200, 200, 200);
+  background-color: rgb(30, 30, 30);
+}
+
+h2 {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.titulares {
+  background-color: rebeccapurple;
+  margin: 0;
+}
+
+.menu-ul {
+  list-style-type: none;
+}
+
+.menu-ul li a {
+  text-decoration: none;
+  color: rgb(200, 200, 200);
+  background-color: brown;
+}
+
+.menu-ul {
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-image {
+  min-height: 100vh;
+  background-image: url(../assets/unidades-estilos/img/labrador.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image div {
+  min-height: inherit;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-image h1 {
+  font-size: 5vw;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu-ul {
+    display: flex;
+  }
+  .menu-ul li {
+    padding: 0.5rem;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .flex-item {
+    flex: 0 0 50%;
+  }
+
+  .flex-order-1 {
+    order: 1;
+  }
+}
